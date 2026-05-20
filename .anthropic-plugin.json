@@ -1,0 +1,29 @@
+{
+  "name": "snp-business-infrastructure",
+  "version": "0.1.0",
+  "vendor": "SnP Danismanlik A.S. (Standards And Partners)",
+  "category": "partner-built",
+  "license": "Apache-2.0",
+  "homepage": "https://businessmetaverse.io",
+  "repository": "https://github.com/muratyilmazsoy-cloud/snp-business-infrastructure",
+  "verticals": ["fund-admin"],
+  "regions": ["TR"],
+  "compliance": ["KVKK-6698", "MASAK-5549", "KDV-3065"],
+  "based_on": {
+    "upstream": "anthropics/financial-services",
+    "path": "plugins/vertical-plugins/fund-admin",
+    "license": "Apache-2.0"
+  },
+  "plugins": [
+    {
+      "name": "snp-fund-admin",
+      "source": "./plugins/vertical-plugins/fund-admin",
+      "description": "SnP Fund Administration plugin — 6 upstream Anthropic skills + 4 TR-mevzuat skills (KVKK / MASAK / KDV + BSMV-stopaj skeleton)"
+    }
+  ],
+  "contact": {
+    "name": "Murat Yilmazsoy",
+    "email": "info@businessmetaverse.io",
+    "whatsapp": "+90 539 673 58 80"
+  }
+}

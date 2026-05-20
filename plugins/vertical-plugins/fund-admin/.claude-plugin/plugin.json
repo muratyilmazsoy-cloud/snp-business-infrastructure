@@ -1,0 +1,30 @@
+{
+  "name": "snp-fund-admin",
+  "version": "0.1.0",
+  "description": "SnP Fund Administration plugin — fund administration and finance ops skills (GL recon, break trace, accruals, roll-forwards, variance commentary, NAV tie-out) extended with TR mevzuat layer (KVKK, MASAK, KDV).",
+  "author": {
+    "name": "SnP Danismanlik A.S. (Standards And Partners)",
+    "email": "info@businessmetaverse.io",
+    "url": "https://businessmetaverse.io"
+  },
+  "homepage": "https://businessmetaverse.io",
+  "repository": "https://github.com/muratyilmazsoy-cloud/snp-business-infrastructure",
+  "license": "Apache-2.0",
+  "keywords": [
+    "auroch",
+    "snp",
+    "fund-admin",
+    "operasyon-4-0",
+    "tr-compliance",
+    "kvkk",
+    "masak",
+    "kdv",
+    "business-infrastructure"
+  ],
+  "categories": ["partner-built", "vertical", "compliance"],
+  "vendor": {
+    "name": "SnP Danismanlik A.S.",
+    "category": "partner-built",
+    "based_on": "anthropics/financial-services fund-admin"
+  }
+}
