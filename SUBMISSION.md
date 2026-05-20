@@ -15,20 +15,25 @@ A partner-built fork of the upstream `anthropics/financial-services` repository,
 
 | Item | Status | Where |
 |---|---|---|
-| License preserved (Apache-2.0) | ok | `LICENSE` (root) — identical to upstream |
+| License preserved (Apache-2.0) | ok | `LICENSE` (root) — matches upstream |
+| NOTICE file (Apache-2.0 attribution) | ok | `NOTICE` (root) — lists six unchanged upstream skills |
 | Plugin manifest present and valid JSON | ok | `plugins/vertical-plugins/fund-admin/.claude-plugin/plugin.json` |
 | Repo-level Anthropic plugin manifest | ok | `.anthropic-plugin.json` |
-| Upstream attribution clear | ok | `README.md` + `plugin.json.vendor.based_on` field |
+| Upstream attribution clear | ok | `README.md` + `plugin.json.vendor.based_on` field + `NOTICE` |
 | Brand vendor disclosed | ok | `SnP Danismanlik A.S. (Standards And Partners)` |
 | Six upstream skills carried forward unchanged | ok | `skills/{nav-tieout, gl-recon, break-trace, accrual-schedule, roll-forward, variance-commentary}` |
 | New SnP skills follow SKILL.md format | ok | YAML frontmatter (`name`, `description`) + body |
 | New commands follow command-md format | ok | YAML frontmatter (`description`) + body |
 | TR mevzuat layer documented | ok | `tr-compliance/` — 3 production adapters + 1 skeleton |
-| No hardcoded secrets / tokens / credentials | ok | grep-clean (see test 50+) |
+| Each tr-compliance doc >= 500 characters | ok | enforced by `test-plugin-submission.js` test 08 |
+| No hardcoded secrets / tokens / credentials | ok | enforced by `test-plugin-submission.js` test 10 |
 | No emoji in shipped files | ok | per SnP charter |
 | Brand voice clean (no forbidden words) | ok | "Standards And Partners" never abbreviated to ampersand |
 | Skeleton (BSMV/stopaj) clearly labelled and gated | ok | `bsmv-stopaj-skeleton.md` + skill body explicit |
 | §10.1 birebir-eşleşme enforced | ok | `kdv-recon` skill + `kdv-adapter.md` |
+| Reviewer demo walkthrough | ok | `DEMO.md` — four prompts, ~10 minutes |
+| Submission email draft | ok | `anthropic-submission-email.md` |
+| Automated submission test harness | ok | `test-plugin-submission.js` — 30+ checks, exit 0 == green |
 
 ## 3. Test results (run before submission)
 
